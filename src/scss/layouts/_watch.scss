@@ -12,6 +12,8 @@
   justify-content: space-evenly;
   align-items: center;
   border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 28px 11px rgba(255, 255, 255, 0.46);
+  box-shadow: 0px 0px 28px 11px rgba(255, 255, 255, 0.46);
 
   .heading {
     display: flex;
@@ -47,14 +49,16 @@
       button {
         width: 150px;
         height: 100px;
-        font-size: 20px;
+        font-size: 30px;
         border: 2px solid rgb(255, 255, 255);
         background: transparent;
         color: #fff;
         margin: 0 10px;
         &:hover {
-          background: #fff;
+          background: rgb(255, 255, 255);
           color: cadetblue;
+          -webkit-box-shadow: 0px 0px 28px 11px rgba(255, 255, 255, 0.46);
+          box-shadow: 0px 0px 28px 11px rgba(255, 255, 255, 0.46);
         }
       }
     }
