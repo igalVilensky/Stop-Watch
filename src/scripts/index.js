@@ -28,5 +28,17 @@ function startTimer() {
 }
 
 buttonStart.onclick = function () {
-  interval = setInterval(startTimer);
+  interval = setInterval(startTimer, 10);
+};
+
+buttonStop.onclick = function () {
+  clearInterval(interval);
+};
+
+buttonReset.onclick = function () {
+  clearInterval(interval);
+  tens = "00";
+  seconds = "00";
+  appendSeconds.innerHTML = seconds;
+  appendTens.innerHTML = tens;
 };
